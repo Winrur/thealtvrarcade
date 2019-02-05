@@ -7,10 +7,25 @@
 
 <!-- set up the scene -->
 <a-scene altspace='fullspace: true'>
-		<a-entity id="ballsnhoops" position="-2.5 5 17" rotation="0 0 0"></a-entity>
-		<a-entity id="origin" position="0 0 0" rotation="0 0 0"></a-entity>
-		<a-entity position="-2.7 0 3.65" rotation="0 0 0" scale="0.5 0.5 0.5" n-portal="targetEntity: #ballsnhoops"></a-entity>		
-		<a-entity position="-2.5 3.5 21" rotation="270 0 0" n-portal="targetEntity: #origin"></a-entity>	
+		<a-entity id="ballsnhoops" position="-2.5 7 17" rotation="0 0 0"></a-entity>
+		<a-entity id="snow" position="6 7 17" rotation="0 0 0"></a-entity>
+		<a-entity id="lancers" position="14 7 17" rotation="0 0 0"></a-entity>
+
+
+		<a-entity id="originbnh" position="-2.5 0 1.4" rotation="0 0 0"></a-entity>
+		<a-entity id="originsnow" position="-0.4 0 1.4" rotation="0 0 0"></a-entity>
+		<a-entity id="originlancers" position="1.74 0 1.4" rotation="0 0 0"></a-entity>
+
+
+
+		<a-entity position="-2.7 0 3.65" rotation="0 0 0" scale="0.5 0.5 0.5" n-portal="targetEntity: #ballsnhoops"></a-entity>	
+		<a-entity position="-0.4 0 3.65" rotation="0 0 0" scale="0.5 0.5 0.5" n-portal="targetEntity: #snow"></a-entity>		
+		<a-entity position="1.74 0 3.65" rotation="0 0 0" scale="0.5 0.5 0.5" n-portal="targetEntity: #lancers"></a-entity>
+
+		<a-entity position="-2.5 7 21" rotation="270 0 0" n-portal="targetEntity: #originbnh"></a-entity>	
+		<a-entity position="6 7 21" rotation="270 0 0" n-portal="targetEntity: #originsnow"></a-entity>	
+		<a-entity position="14 7.5 21" rotation="270 0 0" n-portal="targetEntity: #originlancers"></a-entity>	
+
 </a-scene>
 
 </body></html>
